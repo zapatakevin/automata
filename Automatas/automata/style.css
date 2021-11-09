@@ -1,0 +1,12 @@
+.table-celled th,
+.table-celled td {
+    border: .05rem solid #bc4011;
+    text-align: center;
+    padding: 0.3rem 0.4rem;
+}
+
+.scroller {
+    overflow-y: auto;
+    max-height: 100vh;
+    padding: 1rem;
+}
