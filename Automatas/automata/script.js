@@ -31,7 +31,7 @@ function readInput() {
         inputs.push(text);
     }
     if (inputs.length < 2) {
-        showAlert('Invalid Inputs.');
+        showAlert('Entradas inválidas.');
         return;
     }
 
