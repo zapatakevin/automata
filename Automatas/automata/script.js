@@ -42,7 +42,7 @@ function readInput() {
         states.push(text);
     }
     if (states.length < 2) {
-        showAlert('Invalid States.');
+        showAlert('Entradas inválidas.');
         return;
     }
 
@@ -53,7 +53,7 @@ function readInput() {
             let text = inputTable.rows[i+2].cells[j+1].innerText.trim().replace(/ /g, '');
             if (text.toUpperCase() === 'ERROR') { text = ''; }
             if (!validateValue(text, states)) {
-                showAlert(`Invalid value at [${states[i]}, ${inputs[j]}].`);
+                showAlert(`Valor no válido en [${states[i]}, ${inputs[j]}].`);
                 return;
             }
             row[inputs[j]] = text;
